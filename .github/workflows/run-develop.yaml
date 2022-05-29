@@ -1,7 +1,10 @@
 name: github-actions-practice
-on: [push]
+on:
+  push:
+    branches:
+      - develop
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is a pen."
+      - run: echo "develop branch pushed!!"
